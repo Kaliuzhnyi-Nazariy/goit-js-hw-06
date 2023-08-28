@@ -7,7 +7,7 @@ let valueColor = '';
 clickBtn.addEventListener("click", () => {
   valueColor = getRandomHexColor();
   colorValue.textContent = valueColor;
-  bodyColor.style.backgroundColor = getRandomHexColor();
+  bodyColor.style.backgroundColor = valueColor;
 })
 
 function getRandomHexColor() {
