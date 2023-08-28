@@ -6,7 +6,7 @@ const addBtn = document.querySelector('button[data-action="increment"]');
 const removeBtn = document.querySelector('button[data-action="decrement"]');
 
 let counterValue = 0;
-let step = 1;
+const step = 1;
 
 addBtn.addEventListener("click", () => {
     counterValue += step;
