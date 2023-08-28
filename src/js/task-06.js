@@ -1,9 +1,11 @@
 const inputValue = document.querySelector("#validation-input");
 
-const handler = (e) => {
-  const valLength = e.currentTarget.value.length;
+const handler = () => {
+  const valLength = inputValue.dataset.length;
   
-  if(valLength >= Number(inputValue.dataset.length)){
+  const symbolLength = inputValue.value.length;
+
+  if(symbolLength === Number(valLength)){
     inputValue.classList.add('valid')
     inputValue.classList.remove('invalid')
   }
